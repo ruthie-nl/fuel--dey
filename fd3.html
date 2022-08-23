@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fuel Dey??</title>
+</head>
+<style>
+ body{
+        background-color: darkcyan;
+        background-size: cover;
+    }
+        .box{
+        width: 320px;
+        height: fit-content;
+    border-radius: 20px;
+border-radius: 18px;
+background: white;
+box-shadow: 5px 5px 10px teal, -5px -5px 10px teal;
+margin: 0 auto;
+padding: 32px 16px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+} 
+.box .text{
+    font-size: x-large;
+    text-align: center;
+    font-style: normal;
+    font-family: cursive;
+    color:teal;
+    font-weight: 600;
+}
+.box .form .fields{
+display: grid;
+}
+.box .form .fields .field h2{
+    color: teal;
+    font-size: medium;
+    font-family: cursive;
+
+}
+.box .form .fields .field input{
+    height:45px;
+    width:70%;
+    margin-bottom: 15px;
+    border: 1px solid lightgrey;
+    border-radius: 6px;
+    outline:none;
+    padding: 0 15px;
+    font-size:17px;
+    margin: 20px;
+    color: teal;
+}
+.box .form .button button {
+    display:inline-block;
+            color:teal;
+            font-size: 21px;
+            padding: 12px 36px;
+            margin-top:20px;
+            border-radius:16px;
+            border:2px solidteal;
+            transition:.3s;
+            margin: 20px;
+            background-color: white;
+}
+.box .form .button button :hover{
+    color:black;
+    background:none;
+    background-color: teal;
+}
+select{
+    width: 80%;
+    height: 45px;
+    min-width: 60%;
+    max-width:100% ;
+    border:1px solid lightgray;
+    border-radius: 6px; ;
+    padding:0.25em 0.5em ;
+    font-size:15px ;
+    font-weight: 400;
+    cursor: default;
+    line-height: 4;
+    background-color: white;
+    color: teal;
+    font-family: cursive;
+    margin: 20px;}
+</style>
+<body>
+    <div class="box">
+        <br>
+        <div class="text">Fuel is Avaiable Here</div>
+        <br>
+        <div class="form">
+            <form action="#">
+                <div class="fields">
+                    <div class="field state" id="state"><h2>State</h2>
+                        <div><select name="States" id="state">
+                            <option value="Places">Select a State</option>
+                            <option value="Abuja">Abuja</option>
+                            <option value="Kaduna">Kaduna</option>
+                            <option value="Kano">Kano</option>
+                            <option value="Lagos">Lagos</option>
+                            <option value="Port Harcourt">Port Harcourt</option>
+                        </select></div>
+                       </div>
+                     <div class="field name"> <h2>Fuel Station</h2>
+                        <input type="text" placeholder="Enter name of Fuel station">
+                      </div>
+                      <div class="field price"><h2>Price</h2>
+                        <input type="text" placeholder="Enter current pump price">
+                      </div> 
+                </div>
+                    <div class="button">
+                        <button type="submit" onclick="save()">Submit</a></button>
+                    </div>
+         </form>
+        </div>
+        </div>
+        <script>
+            function save() {alert("Saved,Thank you.");
+                }
+        </script>
+        
+</body>
+</html>
